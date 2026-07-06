@@ -449,6 +449,10 @@ ul { list-style: none; }
 .contact-info-item { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; color: var(--text-muted); }
 .contact-info-icon { width: 40px; height: 40px; background: rgba(59,130,246,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
 
+.social-links { display: flex; gap: 10px; margin-top: 4px; }
+.social-links a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(59,130,246,0.1); color: var(--accent); font-size: 1.1rem; transition: background 0.2s, transform 0.2s; text-decoration: none; }
+.social-links a:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
+
 .contact-form {
   background: var(--bg-card);
   padding: 28px;
@@ -548,6 +552,9 @@ ul { list-style: none; }
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; margin-bottom: 24px; }
 .footer-col h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 14px; }
 .footer-col p, .footer-col a { color: var(--text-muted); font-size: 0.88rem; display: block; margin-bottom: 6px; }
+.footer-social { display: flex; gap: 8px; margin-top: 8px; }
+.footer-social a { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(59,130,246,0.1); color: var(--accent); font-size: 0.9rem; transition: background 0.2s, transform 0.2s; text-decoration: none; margin-bottom: 0; }
+.footer-social a:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
 .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.82rem; }
 
 /* ===== ПОИСК ===== */
