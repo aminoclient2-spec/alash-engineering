@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — ALASH ENGINEERING</title>
+  <meta name="description" content="Каталог продукции ALASH — компьютеры, периферия, конфигуратор. Купить в Казахстане с гарантией.">
+  <meta name="keywords" content="ALASH, каталог, компьютеры, периферия, конфигуратор, Казахстан">
+  <meta property="og:title" content="Каталог — ALASH ENGINEERING">
+  <meta property="og:description" content="Каталог компьютеров и периферии ALASH ENGINEERING">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">AE</span>
+        <span data-i18n="header.logo">ALASH <span>ENGINEERING</span></span>
+      </a>
+      <div class="header-actions">
+        <button class="header-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+        <button class="header-btn" id="themeToggle"><i class="fas fa-sun"></i></button>
+        <button class="header-btn" id="cartBtn">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <select class="switcher-select" id="langSelect">
+          <option value="kz">ҚАЗ</option>
+          <option value="ru" selected>РУС</option>
+          <option value="en">ENG</option>
+        </select>
+        <select class="switcher-select" id="currencySelect">
+          <option value="kzt">₸ KZT</option>
+          <option value="usd">$ USD</option>
+          <option value="rub" selected>₽ RUB</option>
+        </select>
+      </div>
+      <button class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" data-i18n="header.home">Главная</a></li>
+          <li><a href="about.html" data-i18n="header.about">О компании</a></li>
+          <li><a href="catalog.html" data-i18n="header.catalog">Каталог</a></li>
+          <li><a href="configurator.html" data-i18n="header.configurator">Конфигуратор</a></li>
+          <li><a href="contacts.html" data-i18n="header.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumbs" id="breadcrumbs"></div>
+  </div>
+
+  <section class="hero ornament-bg" style="padding:60px 0 50px;">
+    <div class="container">
+      <h1 data-i18n="catalog.heroTitle">Каталог <span>продукции</span></h1>
+      <p data-i18n="catalog.heroDesc">Выберите интересующую вас категорию</p>
+    </div>
+  </section>
+
+  <div class="ornament-line"><span></span></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-grid">
+        <div class="catalog-section fade-in">
+          <div class="catalog-section-icon">&#128187;</div>
+          <h2 data-i18n="catalog.computersTitle">Компьютеры</h2>
+          <p data-i18n="catalog.computersDesc">От офисных станций до игровых ПК.</p>
+          <a href="computers.html" class="btn" data-i18n="catalog.computersBtn">Смотреть компьютеры</a>
+        </div>
+        <div class="catalog-section fade-in">
+          <div class="catalog-section-icon">&#128433;</div>
+          <h2 data-i18n="catalog.peripheralsTitle">Периферия</h2>
+          <p data-i18n="catalog.peripheralsDesc">Клавиатуры, мыши, наушники и другие устройства.</p>
+          <a href="peripherals.html" class="btn" data-i18n="catalog.peripheralsBtn">Смотреть периферию</a>
+        </div>
+        <div class="catalog-section fade-in">
+          <div class="catalog-section-icon">&#128295;</div>
+          <h2 data-i18n="catalog.configuratorTitle">Конфигуратор ПК</h2>
+          <p data-i18n="catalog.configuratorDesc">Собери свой компьютер. Выбери компоненты и рассчитай цену.</p>
+          <a href="configurator.html" class="btn" data-i18n="catalog.configuratorBtn">Перейти в конфигуратор</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>ALASH ENGINEERING</h3>
+          <p data-i18n="footer.desc">Производство компьютеров и периферийного оборудования. Качество, которому доверяют.</p>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.navTitle">Навигация</h3>
+          <a href="index.html" data-i18n="footer.home">Главная</a>
+          <a href="about.html" data-i18n="footer.about">О компании</a>
+          <a href="catalog.html" data-i18n="footer.catalog">Каталог</a>
+          <a href="configurator.html" data-i18n="footer.configurator">Конфигуратор</a>
+          <a href="faq.html">FAQ</a>
+          <a href="favorites.html">Избранное</a>
+          <a href="contacts.html" data-i18n="footer.contacts">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.contactTitle">Контакты</h3>
+          <p data-i18n="footer.address">г. Алматы, ул. Технологическая, 42</p>
+          <p data-i18n="footer.phone">+7 (727) 123-45-67</p>
+          <p data-i18n="footer.email">info@alash-engineering.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 ALASH ENGINEERING CORPORATION. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-modal">
+      <button class="search-close" id="searchClose">✕</button>
+      <input class="search-input" id="searchInput" type="text" data-i18n-placeholder="header.searchPlaceholder" placeholder="Поиск товаров..." autocomplete="off">
+      <p class="search-hint" data-i18n="common.catalog">Введите название товара для поиска</p>
+    </div>
+  </div>
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <div class="cart-modal-header">
+        <h2 data-i18n="header.cart">Корзина</h2>
+        <button class="cart-modal-close" id="cartClose">✕</button>
+      </div>
+      <div class="cart-list" id="cartList"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row"><span data-i18n="header.cartTotal">Итого</span><span id="cartTotal">0 ₽</span></div>
+        <div class="cart-actions">
+          <button class="btn btn-outline" id="cartClear" data-i18n="common.clearCart">Очистить</button>
+          <button class="btn" data-i18n="common.checkout">Оформить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="product-modal" id="productModal">
+    <button class="close-modal" id="modalClose">✕</button>
+    <div class="modal-body">
+      <img id="modalImg" src="" alt="">
+      <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <p class="specs" id="modalSpecs"></p>
+        <p class="price" id="modalPrice"></p>
+        <button class="btn" id="modalBuy" data-i18n="common.buyNow">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

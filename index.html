@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALASH ENGINEERING CORPORATION</title>
+  <meta name="description" content="ALASH ENGINEERING — производство компьютеров и периферии в Казахстане. Сборка ПК, конфигуратор, гарантия до 5 лет.">
+  <meta name="keywords" content="ALASH, компьютеры, периферия, Казахстан, сборка ПК, конфигуратор, Алматы">
+  <meta property="og:title" content="ALASH ENGINEERING CORPORATION">
+  <meta property="og:description" content="Производство компьютеров и периферийного оборудования в Казахстане">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">AE</span>
+        <span data-i18n="header.logo">ALASH <span>ENGINEERING</span></span>
+      </a>
+      <div class="header-actions">
+        <button class="header-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="header-btn" id="themeToggle" aria-label="Theme"><i class="fas fa-sun"></i></button>
+        <button class="header-btn" id="cartBtn" aria-label="Cart">
+          <i class="fas fa-shopping-cart cart-icon"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <select class="switcher-select" id="langSelect" aria-label="Language">
+          <option value="kz">ҚАЗ</option>
+          <option value="ru" selected>РУС</option>
+          <option value="en">ENG</option>
+        </select>
+        <select class="switcher-select" id="currencySelect" aria-label="Currency">
+          <option value="kzt">₸ KZT</option>
+          <option value="usd">$ USD</option>
+          <option value="rub" selected>₽ RUB</option>
+        </select>
+      </div>
+      <button class="menu-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" data-i18n="header.home">Главная</a></li>
+          <li><a href="about.html" data-i18n="header.about">О компании</a></li>
+          <li><a href="catalog.html" data-i18n="header.catalog">Каталог</a></li>
+          <li><a href="configurator.html" data-i18n="header.configurator">Конфигуратор</a></li>
+          <li><a href="contacts.html" data-i18n="header.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="carousel ornament-bg">
+    <div class="carousel-slides">
+      <div class="carousel-slide active">
+        <div class="container">
+          <h1 data-i18n="carousel.slide1Title">Собери своё <span>будущее</span> вместе с ALASH</h1>
+          <p data-i18n="carousel.slide1Desc">Мы производим надёжные компьютеры и периферийное оборудование.</p>
+          <a href="catalog.html" class="btn" data-i18n="carousel.btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="container">
+          <h1 data-i18n="carousel.slide2Title"><span>Качество</span> — наш приоритет</h1>
+          <p data-i18n="carousel.slide2Desc">Каждое устройство проходит 48-часовое тестирование. Гарантия до 5 лет.</p>
+          <a href="about.html" class="btn" data-i18n="carousel.btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="container">
+          <h1 data-i18n="carousel.slide3Title">Решения для <span>любых задач</span></h1>
+          <p data-i18n="carousel.slide3Desc">От офиса до гейминга — у нас есть всё.</p>
+          <a href="catalog.html" class="btn" data-i18n="carousel.btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots">
+      <button class="carousel-dot active"></button>
+      <button class="carousel-dot"></button>
+      <button class="carousel-dot"></button>
+    </div>
+  </div>
+
+  <div class="ornament-divider">
+    <svg viewBox="0 0 240 30">
+      <line x1="0" y1="15" x2="240" y2="15" stroke-width="0.5" opacity="0.3"/>
+      <path d="M15,15 C15,8 25,4 30,12 C35,4 45,8 45,15" stroke-width="0.8"/>
+      <path d="M65,15 C65,8 75,4 80,12 C85,4 95,8 95,15" stroke-width="0.8"/>
+      <path d="M115,15 C115,8 125,4 130,12 C135,4 145,8 145,15" stroke-width="0.8"/>
+      <path d="M165,15 C165,8 175,4 180,12 C185,4 195,8 195,15" stroke-width="0.8"/>
+      <path d="M215,15 C215,8 225,4 230,12 C235,4 240,8 240,15" stroke-width="0.8"/>
+      <rect x="30" y="13" width="4" height="4" transform="rotate(45 32 15)" stroke-width="0.5" opacity="0.4"/>
+      <rect x="80" y="13" width="4" height="4" transform="rotate(45 82 15)" stroke-width="0.5" opacity="0.4"/>
+      <rect x="130" y="13" width="4" height="4" transform="rotate(45 132 15)" stroke-width="0.5" opacity="0.4"/>
+      <rect x="180" y="13" width="4" height="4" transform="rotate(45 182 15)" stroke-width="0.5" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="img/about-alash-production.png" alt="ALASH Production" loading="lazy">
+        </div>
+        <div class="about-content fade-in">
+          <h2 data-i18n="index.aboutTitle">О компании ALASH ENGINEERING</h2>
+          <p data-i18n="index.aboutText1">ALASH ENGINEERING — современное производство компьютерной техники и периферийных устройств.</p>
+          <p data-i18n="index.aboutText2">Каждое устройство проходит многоступенчатый контроль качества.</p>
+          <a href="about.html" class="btn" data-i18n="index.aboutBtn">Подробнее о нас</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament-line"><span></span></div>
+
+  <section class="section bg-secondary ornament-bg">
+    <div class="container">
+      <div class="counters-grid">
+        <div class="counter-card fade-in">
+          <div class="counter-number" data-target="50000">0</div>
+          <div class="counter-label" data-i18n="index.counterComputers">компьютеров собрано</div>
+        </div>
+        <div class="counter-card fade-in">
+          <div class="counter-number" data-target="200000">0</div>
+          <div class="counter-label" data-i18n="index.counterDevices">устройств выпущено</div>
+        </div>
+        <div class="counter-card fade-in">
+          <div class="counter-number" data-target="200">0</div>
+          <div class="counter-label" data-i18n="index.counterEmployees">сотрудников</div>
+        </div>
+        <div class="counter-card fade-in">
+          <div class="counter-number" data-target="5">0</div>
+          <div class="counter-label" data-i18n="index.counterYears">лет гарантии</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament-line"><span></span></div>
+
+  <section class="section ornament-bg">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="index.advantagesTitle">Почему выбирают ALASH</h2>
+      <p class="section-subtitle fade-in" data-i18n="index.advantagesSubtitle">Наши преимущества, которые говорят сами за себя</p>
+      <div class="advantages-grid">
+        <div class="advantage-card fade-in">
+          <div class="advantage-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3 data-i18n="index.advReliabilityTitle">Надёжность</h3>
+          <p data-i18n="index.advReliabilityDesc">48-часовое тестирование под нагрузкой перед отгрузкой.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <div class="advantage-icon"><i class="fas fa-bolt"></i></div>
+          <h3 data-i18n="index.advPerformanceTitle">Производительность</h3>
+          <p data-i18n="index.advPerformanceDesc">Современные комплектующие для максимальной скорости.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <div class="advantage-icon"><i class="fas fa-star"></i></div>
+          <h3 data-i18n="index.advQualityTitle">Гарантия качества</h3>
+          <p data-i18n="index.advQualityDesc">Гарантия до 5 лет и бесплатная техподдержка.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <div class="advantage-icon"><i class="fas fa-envelope"></i></div>
+          <h3 data-i18n="index.advIndividualTitle">Индивидуальный подход</h3>
+          <p data-i18n="index.advIndividualDesc">Конфигурации под любые задачи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament-line"><span></span></div>
+
+  <section class="section bg-secondary ornament-bg">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="index.popularTitle">Популярные товары</h2>
+      <p class="section-subtitle fade-in" data-i18n="index.popularSubtitle">Лучшие предложения этого месяца</p>
+      <div class="products-grid">
+        <div class="product-card fade-in">
+          <img class="product-image" src="img/product-pro-x1.png" alt="ALASH Pro X1" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">ALASH Pro X1</h3>
+            <p class="product-specs">Intel Core i7-13700K, 32GB DDR5, RTX 4070, 1TB NVMe</p>
+            <p class="product-price" data-price-rub="119900">119 900 ₽</p>
+            <button class="product-btn" data-i18n="common.addToCart">В корзину</button>
+            <button class="quick-view-btn" data-i18n="common.quickView">Быстрый просмотр</button>
+          </div>
+        </div>
+        <div class="product-card fade-in">
+          <img class="product-image" src="img/product-home-24.png" alt="ALASH Home 24" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">ALASH Home 24</h3>
+            <p class="product-specs">AMD Ryzen 5 5600G, 16GB DDR4, Radeon Vega 7, 512GB SSD</p>
+            <p class="product-price" data-price-rub="49900">49 900 ₽</p>
+            <button class="product-btn" data-i18n="common.addToCart">В корзину</button>
+            <button class="quick-view-btn" data-i18n="common.quickView">Быстрый просмотр</button>
+          </div>
+        </div>
+        <div class="product-card fade-in">
+          <img class="product-image" src="img/product-mechanic-kb.png" alt="ALASH Mechanic KB" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">ALASH Mechanic KB</h3>
+            <p class="product-specs">Механическая клавиатура, Cherry MX Red, RGB, full-size</p>
+            <p class="product-price" data-price-rub="8900">8 900 ₽</p>
+            <button class="product-btn" data-i18n="common.addToCart">В корзину</button>
+            <button class="quick-view-btn" data-i18n="common.quickView">Быстрый просмотр</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>ALASH ENGINEERING</h3>
+          <p data-i18n="footer.desc">Производство компьютеров и периферийного оборудования. Качество, которому доверяют.</p>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.navTitle">Навигация</h3>
+          <a href="index.html" data-i18n="footer.home">Главная</a>
+          <a href="about.html" data-i18n="footer.about">О компании</a>
+          <a href="catalog.html" data-i18n="footer.catalog">Каталог</a>
+          <a href="configurator.html" data-i18n="footer.configurator">Конфигуратор</a>
+          <a href="faq.html">FAQ</a>
+          <a href="favorites.html">Избранное</a>
+          <a href="contacts.html" data-i18n="footer.contacts">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h3 data-i18n="footer.contactTitle">Контакты</h3>
+          <p data-i18n="footer.address">г. Алматы, ул. Технологическая, 42</p>
+          <p data-i18n="footer.phone">+7 (727) 123-45-67</p>
+          <p data-i18n="footer.email">info@alash-engineering.kz</p>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer.copyright">© 2026 ALASH ENGINEERING CORPORATION. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-modal">
+      <button class="search-close" id="searchClose">✕</button>
+      <input class="search-input" id="searchInput" type="text" data-i18n-placeholder="header.searchPlaceholder" placeholder="Поиск товаров..." autocomplete="off">
+      <p class="search-hint" data-i18n="common.catalog">Введите название товара для поиска</p>
+    </div>
+  </div>
+
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-modal-content">
+      <div class="cart-modal-header">
+        <h2 data-i18n="header.cart">Корзина</h2>
+        <button class="cart-modal-close" id="cartClose">✕</button>
+      </div>
+      <div class="cart-list" id="cartList"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span data-i18n="header.cartTotal">Итого</span>
+          <span id="cartTotal">0 ₽</span>
+        </div>
+        <div class="cart-actions">
+          <button class="btn btn-outline" id="cartClear" data-i18n="common.clearCart">Очистить</button>
+          <button class="btn" data-i18n="common.checkout">Оформить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="product-modal" id="productModal">
+    <button class="close-modal" id="modalClose">✕</button>
+    <div class="modal-body">
+      <img id="modalImg" src="" alt="">
+      <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <p class="specs" id="modalSpecs"></p>
+        <p class="price" id="modalPrice"></p>
+        <button class="btn" id="modalBuy" data-i18n="common.buyNow">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
